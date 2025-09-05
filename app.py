@@ -1,3 +1,4 @@
+from utils import sqlite_fix
 import os
 import streamlit as st
 from pathlib import Path
