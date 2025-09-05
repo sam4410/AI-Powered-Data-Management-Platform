@@ -1,22 +1,21 @@
 # Agentic Data Management Platform - Test Data Setup Requirements
 # Core dependencies for generating comprehensive test databases
-
-# Database and Data Generation
-faker==20.1.0                  # Realistic fake data generation
-
 # Data Processing and Analysis
 pandas==2.1.4                  # Data manipulation and analysis
 numpy==1.24.4                  # Numerical computing
 pyarrow==14.0.2               # Columnar data format support
 
-# Date and Time Utilities
-python-dateutil==2.8.2        # Date/time parsing and manipulation
-
-# JSON and Configuration
-pyjson5==1.6.4                # Enhanced JSON parsing
-pyyaml==6.0.1                 # YAML configuration support
-
 # UI
-streamlit==1.28.1
-crewai==0.121.1
+streamlit>=1.28.0
+crewai
 crewai-tools
+langchain
+langchain-openai
+langchain-community
+openai
+pydantic>=1.10.0,<3.0.0
+python-dotenv
+pandas
+numpy
+requests
+typing-extensions
