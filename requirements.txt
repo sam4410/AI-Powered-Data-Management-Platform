@@ -15,3 +15,6 @@ python-dateutil==2.8.2        # Date/time parsing and manipulation
 # JSON and Configuration
 pyjson5==1.6.4                # Enhanced JSON parsing
 pyyaml==6.0.1                 # YAML configuration support
+
+# UI
+streamlit==1.28.0
