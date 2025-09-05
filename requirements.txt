@@ -12,3 +12,4 @@ numpy
 requests
 typing-extensions
 pysqlite3-binary
+graphviz
