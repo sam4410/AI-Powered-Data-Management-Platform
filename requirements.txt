@@ -11,3 +11,4 @@ pandas
 numpy
 requests
 typing-extensions
+pysqlite3-binary
