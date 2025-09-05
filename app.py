@@ -1,5 +1,6 @@
 from utils import sqlite_fix
 import os
+os.environ["CHROMA_DISABLE"] = "true"
 import streamlit as st
 from pathlib import Path
 from main import run
