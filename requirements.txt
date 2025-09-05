@@ -17,6 +17,6 @@ pyjson5==1.6.4                # Enhanced JSON parsing
 pyyaml==6.0.1                 # YAML configuration support
 
 # UI
-streamlit==1.28.0
+streamlit==1.28.1
 crewai==0.121.1
 crewai-tools
