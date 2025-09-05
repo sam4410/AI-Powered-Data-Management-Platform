@@ -1,0 +1,353 @@
+# ===============================
+# 📁 Data Discovery Phase Tasks
+# ===============================
+
+data_research_task:
+  description: |
+    For the given table `{table_name}`, perform both:
+    
+    1. 📄 Metadata extraction using `metadata_extraction` tool
+    2. 📊 Data profiling using `data_profiling` tool
+    
+    ⚠️ Do not skip either step. Use the tools sequentially and combine their outputs into one JSON result.
+
+    Your scope is limited to `{table_name}` only — DO NOT loop over multiple tables.
+
+    Tool input format:
+    {{
+      "table_name": "{table_name}",
+      "connection_string": "{connection_string}",
+      "allowed_tables": ["{table_name}"],
+      "include_sample_data": false,
+      "max_sample_size": 1000
+    }}
+
+    Ensure you include:
+    - Metadata (schema, structure, constraints)
+    - Column-level profiling (quality, anomalies, suggestions)
+    - Any business rule violations and quality scores
+
+  expected_output: |
+    A single structured JSON object with the following top-level keys:
+    {
+      "metadata": { ... },
+      "profiling": { ... }
+    }
+
+    Both `metadata` and `profiling` must be present.
+  output_format: raw
+  output_file: output/data_research_agent_output.mds
+
+foundation_setup_task:
+  description: |
+    Set up foundational data infrastructure for the table `{table_name}`.
+
+    Connection string:
+    {connection_string}
+
+    🚨 Process only ONE table at a time. DO NOT batch or combine multiple tables.
+
+    🔧 Use tools:
+    - `database_connection` to validate the connection
+    - `metadata_extraction` to fetch table schemas
+
+    🔍 Analyze the table's foundational setup and return:
+    - Cross-validate with metadata and profiling stats:
+    - Are low-quality columns using generic types or lacking constraints?
+    - Do columns with high null % lack NOT NULL enforcement?
+    - Are low-uniqueness fields properly indexed or constrained?
+    - Are memory-heavy tables missing normalization opportunities?
+    - Table name and analysis timestamp
+    - Row and column counts
+    - Estimated size
+    - SQL DDL / creation statement
+    - Primary key(s) and foreign key(s)
+    - Indexes defined
+    - Datatype consistency issues (e.g., usage of generic types, mismatched usage)
+    - Constraint validation:
+      - Uniqueness constraints present?
+      - NOT NULL enforced?
+      - Default values defined?
+    - Naming convention validation:
+      - Are table and column names consistent? (snake_case, lowercase, etc.)
+      - Are reserved keywords avoided?
+    - Governance and anti-patterns:
+      - Missing constraints (PK/FK, indexing, default values)
+      - Wide tables (too many columns)
+      - Redundant or ambiguous column names
+      - Suggestions for schema normalization or refactoring
+
+    ✅ Example input (do NOT batch):
+    {{
+      "connection_string": "{connection_string}",
+      "table_name": "{table_name}",
+      "allowed_tables": ["{table_name}"],
+      "include_sample_data": false,
+      "max_sample_size": 1000
+    }}
+
+  expected_output: |
+    A single flat JSON object for the table's schema assessment.
+
+    ✅ Example output:
+    {{
+      "table_name": "customers",
+      "analysis_timestamp": "2025-08-02T18:48:16.409498",
+      "row_count": 15000,
+      "column_count": 25,
+      "estimated_size_mb": 13.25,
+      "creation_sql": "CREATE TABLE customers (...)",
+      "primary_keys": ["customer_id"],
+      "foreign_keys": [],
+      "indexes": ["customer_id_idx", "email_idx"],
+      "constraint_issues": {{
+        "missing_not_null": ["phone"],
+        "missing_default_values": ["customer_segment", "gender"],
+        "missing_unique_constraints": ["email"]
+      }},
+      "naming_violations": {{
+        "columns_not_snake_case": ["ZipCode", "FirstName"],
+        "reserved_keywords_used": ["order"]
+      }},
+      "datatype_warnings": [
+        "Column 'phone' uses TEXT instead of VARCHAR(15)",
+        "Column 'total_spent' should use NUMERIC(10,2) instead of FLOAT"
+      ],
+      "architecture_findings": [
+        "Missing foreign key constraints",
+        "No indexing on 'email' column",
+        "Wide table: consider splitting into customer_details and preferences"
+      ]
+    }}
+
+  output_format: raw
+  output_file: output/data_foundation_setup_output.md
+
+process_understanding_task:
+  description: |
+    🧠 Your task is to analyze the table `{table_name}` using only the provided metadata and profiling insights.
+
+    ❗ You must return your response **strictly** using the following markdown template. Do not change section headers, bullet symbols, or formatting. Just fill in the blanks.
+
+    ### 🔄 Process Mapping
+    Table: `{table_name}`
+    - 🔄 Business Processes: ...
+    - 🔗 Dependencies: ...
+    - 🛠 Bottlenecks: ...
+    - 💡 Recommendations:
+      - ...
+      - ...
+
+    📝 Definitions:
+    - **Business Processes**: Only name real processes that are clearly supported by this table's schema or profiling.
+    - **Dependencies**: List only foreign key references or allowed tables related to this one.
+    - **Bottlenecks**: Describe any data quality, structure, or access issues.
+    - **Recommendations**: List 2–4 actionable suggestions, each starting with a verb (e.g., "Add", "Automate", "Normalize").
+
+    ⚠️ **Do not generate prose** outside this template.
+    ⚠️ **Do not reference other tables** unless listed in `{data_sources}` or the foreign key metadata.
+
+    📊 Metadata Provided:
+    - Domain: {metadata.get("business_domain", "N/A")}
+    - Criticality: {metadata.get("criticality", "N/A")}
+    - Row Count: {metadata.get("row_count", "N/A")}
+    - Primary Keys: {metadata.get("primary_keys", [])}
+    - Foreign Keys: {metadata.get("foreign_keys", [])}
+    - Estimated Size (MB): {metadata.get("estimated_size_mb", "N/A")}
+
+    🧪 Profiling Insights:
+    - Table Quality Score: {profiling.get("table_quality_score", "N/A")}
+    - Null-heavy Columns: {profiling.get("null_heavy_columns", [])}
+    - Low Quality Columns: {profiling.get("low_quality_columns", [])}
+    - Unique Identifier Candidates: {profiling.get("high_unique_columns", [])}
+
+    🔄 Allowed Tables in This Product:
+    {data_sources}
+
+  expected_output: |
+    ### 🔄 Process Mapping
+    Table: `{table_name}`
+    - 🔄 Business Processes: [list]
+    - 🔗 Dependencies: [list]
+    - 🛠 Bottlenecks: [issue summary]
+    - 💡 Recommendations:
+      - [short suggestion 1]
+      - [short suggestion 2]
+
+  output_format: markdown
+  output_file: output/process_understanding_agent_output.md
+
+data_recommendation_task:
+  description: |
+    Analyze the dataset `{table_name}` using its metadata, profiling output, and infrastructure assessment.
+
+    Your goal is to synthesize all insights into a short list of governance and optimization recommendations.
+
+    Consider:
+    - Poorly named columns or tables
+    - Columns with low uniqueness or high null %
+    - Fields lacking constraints (PK, FK, NOT NULL, DEFAULT)
+    - Wide tables or denormalized structures
+    - Absence of indexes on frequently queried fields
+    - Risky datatype choices or architectural anti-patterns
+    - Opportunities for automation, refactoring, or schema cleanup
+
+    Use column-level profiling and metadata fields to drive highly contextual recommendations.
+
+    For example:
+    - If a column has >50% nulls and no NOT NULL constraint, recommend enforcing one.
+    - If columns show high uniqueness, suggest indexing or candidate primary key.
+    - Highlight columns with low quality for cleansing.
+    - Identify PII-like columns (name, email, phone) for masking.
+    - Recommend data normalization if tables are wide or duplicated values exist.
+
+    Include both **schema-level** and **column-level** suggestions, grounded in actual data stats.
+
+    Inputs:
+    📄 Metadata Summary: {metadata}
+    🧪 Profiling Summary: {profiling}
+    🧱 Foundation Assessment: {foundation}
+
+    Format the output as markdown with bullet points grouped under themes:
+    - Data Quality
+    - Schema Design
+    - Indexing & Performance
+    - Governance & Compliance
+
+    Provide 4–8 total recommendations. Be concise but specific.
+  
+  expected_output: |
+    A markdown bullet list grouped by recommendation categories.
+
+  output_format: markdown
+  output_file: output/data_recommendation_summary.md
+
+# ===============================
+# 🧾 Data Cataloging Phase Tasks
+# ===============================
+data_lineage_task:
+  description: |
+    Map data flow and transformations for the following tables:
+    {data_sources}
+
+    Scope:
+    1. Track data movement between systems and processing stages
+    2. Identify transformation rules and propagation paths
+    3. Visualize lineage using diagrams and markdown summaries
+    4. Highlight potential bottlenecks and dependency risks
+  expected_output: "Comprehensive lineage documentation including visuals, transformation flow, and traceability report"
+  output_file: output/data_lineage_agent_output.md
+
+metadata_validation_task:
+  description: |
+    Validate metadata for the following tables:
+    {data_sources}
+
+    Scope:
+    1. Extract field-level metadata using tools
+    2. Verify naming conventions, data types, and completeness
+    3. Flag inconsistencies and suggest normalization
+    4. Produce a markdown-formatted metadata catalog with validation insights
+  expected_output: "Structured metadata catalog with validation findings and standardization suggestions"
+  output_file: output/metadata_validation_agent_output.md
+
+data_integration_task:
+  description: |
+    Design ETL/ELT integration strategies for:
+    {data_sources}
+
+    Scope:
+    1. Assess table compatibility and merge readiness
+    2. Define workflows for joins, deduplication, and transformations
+    3. Propose batch or real-time synchronization pipelines
+    4. Generate integration design document in markdown
+  expected_output: "ETL design proposal including transformation logic, sync strategy, and integration readiness insights"
+  output_file: output/data_integration_agent_output.md
+
+# ===============================
+# 🧪 Data Processing Phase Tasks
+# ===============================
+data_quality_task:
+  description: |
+    Apply quality assessment on the following tables:
+    {data_sources}
+
+    Scope:
+    1. Use Data Validation Tool to check nulls, duplicates, and integrity
+    2. Apply completeness and uniqueness thresholds
+    3. Identify violations and report table health scores
+    4. Recommend cleaning rules
+  expected_output: "Data quality scorecard with issue flags, rules applied, and cleansing recommendations"
+  output_file: output/data_quality_agent_output.md
+
+data_observability_task:
+  description: |
+    Enable observability for data tables:
+    {data_sources}
+
+    Scope:
+    1. Monitor query logs, frequency, and performance
+    2. Set anomaly detection and schema change alerts
+    3. Map SLAs and freshness guarantees
+    4. Propose observability dashboards
+  expected_output: "Observability blueprint with logs, alerts, and freshness monitors for allowed tables"
+  output_file: output/data_observability_agent_output.md
+
+performance_tuning_task:
+  description: |
+    Tune performance for:
+    {data_sources}
+
+    Scope:
+    1. Analyze query plans and indexes
+    2. Recommend schema optimizations (e.g., partitioning, indexes)
+    3. Suggest caching layers and access patterns
+    4. Output performance scorecards
+  expected_output: "Performance tuning guide with diagnostics and improvements for allowed tables"
+  output_file: output/performance_tuning_agent_output.md
+
+# ===============================
+# 📊 Insights Generation Phase Tasks
+# ===============================
+text2sql_task:
+  description: |
+    Build Text2SQL engine for:
+    {data_sources}
+
+    Scope:
+    1. Translate natural language questions into accurate SQL
+    2. Filter schema awareness to only allowed tables
+    3. Return results with formatted summaries
+    4. Log query patterns and performance
+  expected_output: |
+    Text2SQL system that:
+    - Handles NL to SQL for listed tables
+    - Supports joins and nested queries
+    - Logs and formats results
+  output_file: output/text2sql_agent_output.md
+
+caching_task:
+  description: |
+    Design caching strategy for queries on:
+    {data_sources}
+
+    Scope:
+    1. Identify repetitive query patterns
+    2. Propose cache layers and TTL rules
+    3. Track hit/miss rates
+    4. Design cache refresh policies
+  expected_output: "Caching strategy design with rules, performance projections, and refresh logic"
+  output_file: output/caching_agent_output.md
+
+reports_generation_task:
+  description: |
+    Generate data insights reports and dashboards for:
+    {data_sources}
+
+    Responsibilities:
+    1. Create visual dashboards and exportable reports
+    2. Integrate with Text2SQL outputs
+    3. Apply access controls and format consistency
+    4. Document schedule and distribution workflows
+  expected_output: "Packaged reports with charts, markdown summary, export options, and delivery logic"
+  output_file: output/report_generation_agent_output.md

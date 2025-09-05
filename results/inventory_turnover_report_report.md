@@ -1,0 +1,320 @@
+# 📝 Inventory Turnover & Aging
+**Generated:** July 17, 2025
+
+**Data Source:** `C:\Users\ManojSharma\LLM Projects\AI projects\Advanced Agentic AI Projects\Agentic AI Platform for Data Management\agentic_ai_platform_for_data_management-data_products-backup\uploaded_dbs\ecommerce_db.db`
+
+## Executive Summary
+
+Analysis includes product sales performance metrics
+
+## Section 1
+- **product_name**: Intuitive regional encoding, **total_units_sold**: 2485, **avg_stock**: 278.6, **turnover_ratio**: 8.92
+- **product_name**: Enhanced methodical knowledgebase, **total_units_sold**: 1520, **avg_stock**: 246.2, **turnover_ratio**: 6.17
+- **product_name**: Optimized 4thgeneration circuit, **total_units_sold**: 1820, **avg_stock**: 275.0, **turnover_ratio**: 6.62
+- **product_name**: Digitized attitude-oriented contingency, **total_units_sold**: 1695, **avg_stock**: 345.8, **turnover_ratio**: 4.9
+- **product_name**: Reactive reciprocal extranet, **total_units_sold**: 2080, **avg_stock**: 287.8, **turnover_ratio**: 7.23
+- **product_name**: Cloned client-server secured line, **total_units_sold**: 1900, **avg_stock**: 94.8, **turnover_ratio**: 20.04
+- **product_name**: Realigned web-enabled matrix, **total_units_sold**: 1530, **avg_stock**: 236.2, **turnover_ratio**: 6.48
+- **product_name**: Assimilated asynchronous solution, **total_units_sold**: 2585, **avg_stock**: 228.0, **turnover_ratio**: 11.34
+- **product_name**: Function-based upward-trending frame, **total_units_sold**: 2120, **avg_stock**: 272.6, **turnover_ratio**: 7.78
+- **product_name**: Synergistic multi-tasking instruction set, **total_units_sold**: 1955, **avg_stock**: 203.6, **turnover_ratio**: 9.6
+- **product_name**: Organized homogeneous encoding, **total_units_sold**: 1980, **avg_stock**: 211.6, **turnover_ratio**: 9.36
+- **product_name**: Organized user-facing product, **total_units_sold**: 2490, **avg_stock**: 259.0, **turnover_ratio**: 9.61
+- **product_name**: Grass-roots actuating archive, **total_units_sold**: 2440, **avg_stock**: 257.4, **turnover_ratio**: 9.48
+- **product_name**: Innovative fault-tolerant Graphic Interface, **total_units_sold**: 1925, **avg_stock**: 207.6, **turnover_ratio**: 9.27
+- **product_name**: De-engineered systemic implementation, **total_units_sold**: 2305, **avg_stock**: 297.4, **turnover_ratio**: 7.75
+- **product_name**: Mandatory bandwidth-monitored circuit, **total_units_sold**: 1790, **avg_stock**: 275.2, **turnover_ratio**: 6.5
+- **product_name**: Automated encompassing knowledge user, **total_units_sold**: 1905, **avg_stock**: 129.8, **turnover_ratio**: 14.68
+- **product_name**: Customer-focused object-oriented service-desk, **total_units_sold**: 2350, **avg_stock**: 185.0, **turnover_ratio**: 12.7
+- **product_name**: Fully-configurable systemic database, **total_units_sold**: 1945, **avg_stock**: 211.0, **turnover_ratio**: 9.22
+- **product_name**: Monitored foreground emulation, **total_units_sold**: 2035, **avg_stock**: 324.6, **turnover_ratio**: 6.27
+- **product_name**: Automated tertiary architecture, **total_units_sold**: 1895, **avg_stock**: 267.8, **turnover_ratio**: 7.08
+- **product_name**: Streamlined client-driven strategy, **total_units_sold**: 2165, **avg_stock**: 233.6, **turnover_ratio**: 9.27
+- **product_name**: Streamlined asynchronous open system, **total_units_sold**: 2130, **avg_stock**: 102.0, **turnover_ratio**: 20.88
+- **product_name**: Organic bandwidth-monitored complexity, **total_units_sold**: 2070, **avg_stock**: 296.4, **turnover_ratio**: 6.98
+- **product_name**: Operative 5thgeneration core, **total_units_sold**: 1930, **avg_stock**: 231.2, **turnover_ratio**: 8.35
+- **product_name**: Switchable static Graphic Interface, **total_units_sold**: 2075, **avg_stock**: 254.6, **turnover_ratio**: 8.15
+- **product_name**: Secured systematic Internet solution, **total_units_sold**: 1955, **avg_stock**: 177.0, **turnover_ratio**: 11.05
+- **product_name**: Reactive fault-tolerant collaboration, **total_units_sold**: 2070, **avg_stock**: 304.2, **turnover_ratio**: 6.8
+- **product_name**: Vision-oriented systemic matrix, **total_units_sold**: 2145, **avg_stock**: 135.6, **turnover_ratio**: 15.82
+- **product_name**: Compatible well-modulated groupware, **total_units_sold**: 1780, **avg_stock**: 266.2, **turnover_ratio**: 6.69
+- **product_name**: Digitized transitional open system, **total_units_sold**: 1845, **avg_stock**: 217.4, **turnover_ratio**: 8.49
+- **product_name**: Switchable eco-centric Graphical User Interface, **total_units_sold**: 1770, **avg_stock**: 258.8, **turnover_ratio**: 6.84
+- **product_name**: Enterprise-wide exuding open system, **total_units_sold**: 2285, **avg_stock**: 344.2, **turnover_ratio**: 6.64
+- **product_name**: Distributed client-driven hierarchy, **total_units_sold**: 1665, **avg_stock**: 183.0, **turnover_ratio**: 9.1
+- **product_name**: Horizontal asymmetric access, **total_units_sold**: 1650, **avg_stock**: 23.0, **turnover_ratio**: 71.74
+- **product_name**: Cross-platform local core, **total_units_sold**: 2005, **avg_stock**: 339.2, **turnover_ratio**: 5.91
+- **product_name**: Persistent incremental monitoring, **total_units_sold**: 1995, **avg_stock**: 186.6, **turnover_ratio**: 10.69
+- **product_name**: Intuitive systematic benchmark, **total_units_sold**: 2380, **avg_stock**: 203.4, **turnover_ratio**: 11.7
+- **product_name**: Enhanced non-volatile help-desk, **total_units_sold**: 2225, **avg_stock**: 226.0, **turnover_ratio**: 9.85
+- **product_name**: Reverse-engineered explicit synergy, **total_units_sold**: 2240, **avg_stock**: 182.0, **turnover_ratio**: 12.31
+- **product_name**: Realigned intangible toolset, **total_units_sold**: 2405, **avg_stock**: 175.4, **turnover_ratio**: 13.71
+- **product_name**: Proactive optimal monitoring, **total_units_sold**: 2060, **avg_stock**: 213.0, **turnover_ratio**: 9.67
+- **product_name**: Mandatory multi-tasking groupware, **total_units_sold**: 1825, **avg_stock**: 196.2, **turnover_ratio**: 9.3
+- **product_name**: Quality-focused tertiary secured line, **total_units_sold**: 2155, **avg_stock**: 233.0, **turnover_ratio**: 9.25
+- **product_name**: Re-contextualized next generation toolset, **total_units_sold**: 1650, **avg_stock**: 131.4, **turnover_ratio**: 12.56
+- **product_name**: Decentralized neutral core, **total_units_sold**: 2365, **avg_stock**: 147.6, **turnover_ratio**: 16.02
+- **product_name**: Face-to-face tangible process improvement, **total_units_sold**: 2065, **avg_stock**: 188.8, **turnover_ratio**: 10.94
+- **product_name**: Open-architected global contingency, **total_units_sold**: 2225, **avg_stock**: 186.4, **turnover_ratio**: 11.94
+- **product_name**: Diverse multi-tasking orchestration, **total_units_sold**: 2045, **avg_stock**: 55.6, **turnover_ratio**: 36.78
+- **product_name**: Stand-alone interactive parallelism, **total_units_sold**: 2455, **avg_stock**: 105.6, **turnover_ratio**: 23.25
+- **product_name**: Assimilated systemic analyzer, **total_units_sold**: 1935, **avg_stock**: 303.2, **turnover_ratio**: 6.38
+- **product_name**: Extended clear-thinking pricing structure, **total_units_sold**: 2285, **avg_stock**: 316.8, **turnover_ratio**: 7.21
+- **product_name**: Robust actuating access, **total_units_sold**: 2000, **avg_stock**: 193.2, **turnover_ratio**: 10.35
+- **product_name**: Cross-group human-resource protocol, **total_units_sold**: 2390, **avg_stock**: 339.8, **turnover_ratio**: 7.03
+- **product_name**: De-engineered homogeneous implementation, **total_units_sold**: 2350, **avg_stock**: 88.4, **turnover_ratio**: 26.58
+- **product_name**: Persevering user-facing instruction set, **total_units_sold**: 1925, **avg_stock**: 241.0, **turnover_ratio**: 7.99
+- **product_name**: Synchronized scalable intranet, **total_units_sold**: 2365, **avg_stock**: 137.8, **turnover_ratio**: 17.16
+- **product_name**: Polarized fault-tolerant toolset, **total_units_sold**: 2085, **avg_stock**: 212.8, **turnover_ratio**: 9.8
+- **product_name**: Quality-focused asynchronous emulation, **total_units_sold**: 2340, **avg_stock**: 170.0, **turnover_ratio**: 13.76
+- **product_name**: Multi-tiered tertiary software, **total_units_sold**: 1900, **avg_stock**: 207.0, **turnover_ratio**: 9.18
+- **product_name**: Secured fresh-thinking Graphic Interface, **total_units_sold**: 2000, **avg_stock**: 171.6, **turnover_ratio**: 11.66
+- **product_name**: Public-key 24/7 challenge, **total_units_sold**: 2590, **avg_stock**: 236.8, **turnover_ratio**: 10.94
+- **product_name**: Vision-oriented maximized artificial intelligence, **total_units_sold**: 2250, **avg_stock**: 198.8, **turnover_ratio**: 11.32
+- **product_name**: Grass-roots zero-defect solution, **total_units_sold**: 1905, **avg_stock**: 271.8, **turnover_ratio**: 7.01
+- **product_name**: Integrated bottom-line monitoring, **total_units_sold**: 2125, **avg_stock**: 254.2, **turnover_ratio**: 8.36
+- **product_name**: Organized user-facing pricing structure, **total_units_sold**: 1950, **avg_stock**: 304.8, **turnover_ratio**: 6.4
+- **product_name**: Decentralized value-added flexibility, **total_units_sold**: 1670, **avg_stock**: 296.6, **turnover_ratio**: 5.63
+- **product_name**: De-engineered high-level access, **total_units_sold**: 1760, **avg_stock**: 297.0, **turnover_ratio**: 5.93
+- **product_name**: Right-sized maximized ability, **total_units_sold**: 2020, **avg_stock**: 175.0, **turnover_ratio**: 11.54
+- **product_name**: Right-sized optimizing hardware, **total_units_sold**: 1855, **avg_stock**: 322.6, **turnover_ratio**: 5.75
+- **product_name**: Organized modular intranet, **total_units_sold**: 2060, **avg_stock**: 150.4, **turnover_ratio**: 13.7
+- **product_name**: Optional intermediate hardware, **total_units_sold**: 2320, **avg_stock**: 329.0, **turnover_ratio**: 7.05
+- **product_name**: Exclusive contextually-based matrices, **total_units_sold**: 2355, **avg_stock**: 213.4, **turnover_ratio**: 11.04
+- **product_name**: Upgradable analyzing access, **total_units_sold**: 2130, **avg_stock**: 281.8, **turnover_ratio**: 7.56
+- **product_name**: Universal optimizing capacity, **total_units_sold**: 1995, **avg_stock**: 321.2, **turnover_ratio**: 6.21
+- **product_name**: Visionary empowering system engine, **total_units_sold**: 2280, **avg_stock**: 271.2, **turnover_ratio**: 8.41
+- **product_name**: Centralized foreground application, **total_units_sold**: 2360, **avg_stock**: 177.0, **turnover_ratio**: 13.33
+- **product_name**: Proactive solution-oriented workforce, **total_units_sold**: 1870, **avg_stock**: 257.8, **turnover_ratio**: 7.25
+- **product_name**: Polarized 24/7 hierarchy, **total_units_sold**: 1445, **avg_stock**: 251.2, **turnover_ratio**: 5.75
+- **product_name**: De-engineered needs-based analyzer, **total_units_sold**: 1910, **avg_stock**: 229.8, **turnover_ratio**: 8.31
+- **product_name**: Adaptive disintermediate customer loyalty, **total_units_sold**: 2055, **avg_stock**: 255.4, **turnover_ratio**: 8.05
+- **product_name**: Streamlined static strategy, **total_units_sold**: 2010, **avg_stock**: 213.0, **turnover_ratio**: 9.44
+- **product_name**: Front-line systematic hardware, **total_units_sold**: 2080, **avg_stock**: 215.8, **turnover_ratio**: 9.64
+- **product_name**: Vision-oriented 6thgeneration approach, **total_units_sold**: 1825, **avg_stock**: 224.4, **turnover_ratio**: 8.13
+- **product_name**: Cross-group 4thgeneration neural-net, **total_units_sold**: 2260, **avg_stock**: 131.2, **turnover_ratio**: 17.23
+- **product_name**: Cloned composite initiative, **total_units_sold**: 2435, **avg_stock**: 252.8, **turnover_ratio**: 9.63
+- **product_name**: User-friendly uniform productivity, **total_units_sold**: 1600, **avg_stock**: 192.4, **turnover_ratio**: 8.32
+- **product_name**: Automated multimedia groupware, **total_units_sold**: 2350, **avg_stock**: 100.8, **turnover_ratio**: 23.31
+- **product_name**: Multi-tiered holistic knowledge user, **total_units_sold**: 1455, **avg_stock**: 217.6, **turnover_ratio**: 6.69
+- **product_name**: Customizable client-server middleware, **total_units_sold**: 2190, **avg_stock**: 244.2, **turnover_ratio**: 8.97
+- **product_name**: Mandatory upward-trending workforce, **total_units_sold**: 1760, **avg_stock**: 155.6, **turnover_ratio**: 11.31
+- **product_name**: Team-oriented background task-force, **total_units_sold**: 1905, **avg_stock**: 244.8, **turnover_ratio**: 7.78
+- **product_name**: Total multimedia access, **total_units_sold**: 2300, **avg_stock**: 150.2, **turnover_ratio**: 15.31
+- **product_name**: Fundamental system-worthy customer loyalty, **total_units_sold**: 2050, **avg_stock**: 300.6, **turnover_ratio**: 6.82
+- **product_name**: Extended transitional portal, **total_units_sold**: 1780, **avg_stock**: 346.2, **turnover_ratio**: 5.14
+- **product_name**: Streamlined demand-driven concept, **total_units_sold**: 2010, **avg_stock**: 260.4, **turnover_ratio**: 7.72
+- **product_name**: Cross-platform optimal knowledge user, **total_units_sold**: 1935, **avg_stock**: 165.0, **turnover_ratio**: 11.73
+- **product_name**: Sharable static open system, **total_units_sold**: 2230, **avg_stock**: 222.6, **turnover_ratio**: 10.02
+- **product_name**: Innovative leadingedge challenge, **total_units_sold**: 2330, **avg_stock**: 221.0, **turnover_ratio**: 10.54
+- **product_name**: Assimilated multi-state strategy, **total_units_sold**: 1785, **avg_stock**: 264.8, **turnover_ratio**: 6.74
+
+## Section 2
+- **product_name**: Multi-layered scalable product, **age_days**: 734.7189958100207, **quantity_available**: 161
+- **product_name**: Multi-layered scalable product, **age_days**: 734.7189958100207, **quantity_available**: 293
+- **product_name**: Multi-layered scalable product, **age_days**: 734.7189958100207, **quantity_available**: 296
+- **product_name**: Multi-layered scalable product, **age_days**: 734.7189958100207, **quantity_available**: 475
+- **product_name**: Multi-layered scalable product, **age_days**: 734.7189958100207, **quantity_available**: 80
+- **product_name**: Switchable heuristic adapter, **age_days**: 734.7189958100207, **quantity_available**: 294
+- **product_name**: Switchable heuristic adapter, **age_days**: 734.7189958100207, **quantity_available**: 33
+- **product_name**: Switchable heuristic adapter, **age_days**: 734.7189958100207, **quantity_available**: 349
+- **product_name**: Switchable heuristic adapter, **age_days**: 734.7189958100207, **quantity_available**: 481
+- **product_name**: Switchable heuristic adapter, **age_days**: 734.7189958100207, **quantity_available**: 357
+- **product_name**: Devolved asymmetric strategy, **age_days**: 734.7189958100207, **quantity_available**: 452
+- **product_name**: Devolved asymmetric strategy, **age_days**: 734.7189958100207, **quantity_available**: 291
+- **product_name**: Devolved asymmetric strategy, **age_days**: 734.7189958100207, **quantity_available**: 215
+- **product_name**: Devolved asymmetric strategy, **age_days**: 734.7189958100207, **quantity_available**: 135
+- **product_name**: Devolved asymmetric strategy, **age_days**: 734.7189958100207, **quantity_available**: 333
+- **product_name**: Open-architected tangible toolset, **age_days**: 734.7189958100207, **quantity_available**: 467
+- **product_name**: Open-architected tangible toolset, **age_days**: 734.7189958100207, **quantity_available**: 203
+- **product_name**: Open-architected tangible toolset, **age_days**: 734.7189958100207, **quantity_available**: 386
+- **product_name**: Open-architected tangible toolset, **age_days**: 734.7189958100207, **quantity_available**: 451
+- **product_name**: Open-architected tangible toolset, **age_days**: 734.7189958100207, **quantity_available**: 156
+- **product_name**: Function-based upward-trending frame, **age_days**: 733.7189958100207, **quantity_available**: 499
+- **product_name**: Function-based upward-trending frame, **age_days**: 733.7189958100207, **quantity_available**: 261
+- **product_name**: Function-based upward-trending frame, **age_days**: 733.7189958100207, **quantity_available**: 102
+- **product_name**: Function-based upward-trending frame, **age_days**: 733.7189958100207, **quantity_available**: 127
+- **product_name**: Function-based upward-trending frame, **age_days**: 733.7189958100207, **quantity_available**: 374
+- **product_name**: Phased leadingedge framework, **age_days**: 733.7189958100207, **quantity_available**: 97
+- **product_name**: Phased leadingedge framework, **age_days**: 733.7189958100207, **quantity_available**: 12
+- **product_name**: Phased leadingedge framework, **age_days**: 733.7189958100207, **quantity_available**: 70
+- **product_name**: Phased leadingedge framework, **age_days**: 733.7189958100207, **quantity_available**: 369
+- **product_name**: Phased leadingedge framework, **age_days**: 733.7189958100207, **quantity_available**: 225
+- **product_name**: Customer-focused maximized task-force, **age_days**: 733.7189958100207, **quantity_available**: 237
+- **product_name**: Customer-focused maximized task-force, **age_days**: 733.7189958100207, **quantity_available**: 427
+- **product_name**: Customer-focused maximized task-force, **age_days**: 733.7189958100207, **quantity_available**: 289
+- **product_name**: Customer-focused maximized task-force, **age_days**: 733.7189958100207, **quantity_available**: 145
+- **product_name**: Customer-focused maximized task-force, **age_days**: 733.7189958100207, **quantity_available**: 179
+- **product_name**: Enhanced grid-enabled solution, **age_days**: 732.7189958100207, **quantity_available**: 8
+- **product_name**: Enhanced grid-enabled solution, **age_days**: 732.7189958100207, **quantity_available**: 31
+- **product_name**: Enhanced grid-enabled solution, **age_days**: 732.7189958100207, **quantity_available**: 210
+- **product_name**: Enhanced grid-enabled solution, **age_days**: 732.7189958100207, **quantity_available**: 410
+- **product_name**: Enhanced grid-enabled solution, **age_days**: 732.7189958100207, **quantity_available**: 255
+- **product_name**: Monitored zero-defect methodology, **age_days**: 731.7189958100207, **quantity_available**: 300
+- **product_name**: Monitored zero-defect methodology, **age_days**: 731.7189958100207, **quantity_available**: 39
+- **product_name**: Monitored zero-defect methodology, **age_days**: 731.7189958100207, **quantity_available**: 409
+- **product_name**: Monitored zero-defect methodology, **age_days**: 731.7189958100207, **quantity_available**: 413
+- **product_name**: Monitored zero-defect methodology, **age_days**: 731.7189958100207, **quantity_available**: 63
+- **product_name**: Open-source local capacity, **age_days**: 731.7189958100207, **quantity_available**: 276
+- **product_name**: Open-source local capacity, **age_days**: 731.7189958100207, **quantity_available**: 19
+- **product_name**: Open-source local capacity, **age_days**: 731.7189958100207, **quantity_available**: 24
+- **product_name**: Open-source local capacity, **age_days**: 731.7189958100207, **quantity_available**: 218
+- **product_name**: Open-source local capacity, **age_days**: 731.7189958100207, **quantity_available**: 307
+- **product_name**: Vision-oriented web-enabled system engine, **age_days**: 730.7189958100207, **quantity_available**: 14
+- **product_name**: Vision-oriented web-enabled system engine, **age_days**: 730.7189958100207, **quantity_available**: 348
+- **product_name**: Vision-oriented web-enabled system engine, **age_days**: 730.7189958100207, **quantity_available**: 22
+- **product_name**: Vision-oriented web-enabled system engine, **age_days**: 730.7189958100207, **quantity_available**: 27
+- **product_name**: Vision-oriented web-enabled system engine, **age_days**: 730.7189958100207, **quantity_available**: 496
+- **product_name**: Profit-focused static customer loyalty, **age_days**: 730.7189958100207, **quantity_available**: 4
+- **product_name**: Profit-focused static customer loyalty, **age_days**: 730.7189958100207, **quantity_available**: 222
+- **product_name**: Profit-focused static customer loyalty, **age_days**: 730.7189958100207, **quantity_available**: 15
+- **product_name**: Profit-focused static customer loyalty, **age_days**: 730.7189958100207, **quantity_available**: 387
+- **product_name**: Profit-focused static customer loyalty, **age_days**: 730.7189958100207, **quantity_available**: 398
+- **product_name**: Advanced analyzing knowledge user, **age_days**: 729.7189958100207, **quantity_available**: 6
+- **product_name**: Advanced analyzing knowledge user, **age_days**: 729.7189958100207, **quantity_available**: 189
+- **product_name**: Advanced analyzing knowledge user, **age_days**: 729.7189958100207, **quantity_available**: 75
+- **product_name**: Advanced analyzing knowledge user, **age_days**: 729.7189958100207, **quantity_available**: 1
+- **product_name**: Advanced analyzing knowledge user, **age_days**: 729.7189958100207, **quantity_available**: 423
+- **product_name**: Synchronized scalable challenge, **age_days**: 729.7189958100207, **quantity_available**: 160
+- **product_name**: Synchronized scalable challenge, **age_days**: 729.7189958100207, **quantity_available**: 23
+- **product_name**: Synchronized scalable challenge, **age_days**: 729.7189958100207, **quantity_available**: 167
+- **product_name**: Synchronized scalable challenge, **age_days**: 729.7189958100207, **quantity_available**: 76
+- **product_name**: Synchronized scalable challenge, **age_days**: 729.7189958100207, **quantity_available**: 338
+- **product_name**: Open-source coherent task-force, **age_days**: 729.7189958100207, **quantity_available**: 81
+- **product_name**: Open-source coherent task-force, **age_days**: 729.7189958100207, **quantity_available**: 328
+- **product_name**: Open-source coherent task-force, **age_days**: 729.7189958100207, **quantity_available**: 11
+- **product_name**: Open-source coherent task-force, **age_days**: 729.7189958100207, **quantity_available**: 237
+- **product_name**: Open-source coherent task-force, **age_days**: 729.7189958100207, **quantity_available**: 316
+- **product_name**: Quality-focused client-driven moderator, **age_days**: 728.7189958100207, **quantity_available**: 412
+- **product_name**: Quality-focused client-driven moderator, **age_days**: 728.7189958100207, **quantity_available**: 172
+- **product_name**: Quality-focused client-driven moderator, **age_days**: 728.7189958100207, **quantity_available**: 430
+- **product_name**: Quality-focused client-driven moderator, **age_days**: 728.7189958100207, **quantity_available**: 180
+- **product_name**: Quality-focused client-driven moderator, **age_days**: 728.7189958100207, **quantity_available**: 228
+- **product_name**: Phased optimal intranet, **age_days**: 728.7189958100207, **quantity_available**: 258
+- **product_name**: Phased optimal intranet, **age_days**: 728.7189958100207, **quantity_available**: 309
+- **product_name**: Phased optimal intranet, **age_days**: 728.7189958100207, **quantity_available**: 415
+- **product_name**: Phased optimal intranet, **age_days**: 728.7189958100207, **quantity_available**: 154
+- **product_name**: Phased optimal intranet, **age_days**: 728.7189958100207, **quantity_available**: 86
+- **product_name**: Programmable impactful projection, **age_days**: 727.7189958100207, **quantity_available**: 364
+- **product_name**: Programmable impactful projection, **age_days**: 727.7189958100207, **quantity_available**: 402
+- **product_name**: Programmable impactful projection, **age_days**: 727.7189958100207, **quantity_available**: 329
+- **product_name**: Programmable impactful projection, **age_days**: 727.7189958100207, **quantity_available**: 433
+- **product_name**: Programmable impactful projection, **age_days**: 727.7189958100207, **quantity_available**: 196
+- **product_name**: Seamless optimizing archive, **age_days**: 727.7189958100207, **quantity_available**: 217
+- **product_name**: Seamless optimizing archive, **age_days**: 727.7189958100207, **quantity_available**: 288
+- **product_name**: Seamless optimizing archive, **age_days**: 727.7189958100207, **quantity_available**: 15
+- **product_name**: Seamless optimizing archive, **age_days**: 727.7189958100207, **quantity_available**: 48
+- **product_name**: Seamless optimizing archive, **age_days**: 727.7189958100207, **quantity_available**: 2
+- **product_name**: Ergonomic 4thgeneration support, **age_days**: 727.7189958100207, **quantity_available**: 105
+- **product_name**: Ergonomic 4thgeneration support, **age_days**: 727.7189958100207, **quantity_available**: 295
+- **product_name**: Ergonomic 4thgeneration support, **age_days**: 727.7189958100207, **quantity_available**: 431
+- **product_name**: Ergonomic 4thgeneration support, **age_days**: 727.7189958100207, **quantity_available**: 449
+- **product_name**: Ergonomic 4thgeneration support, **age_days**: 727.7189958100207, **quantity_available**: 413
+
+## Section 3
+- **product_name**: Intuitive regional encoding, **quantity_available**: 160, **avg_daily_sales**: 4.75, **days_on_hand**: 33.68
+- **product_name**: Enhanced methodical knowledgebase, **quantity_available**: 10, **avg_daily_sales**: 6.333333333333333, **days_on_hand**: 1.58
+- **product_name**: Optimized 4thgeneration circuit, **quantity_available**: 221, **avg_daily_sales**: 4.666666666666667, **days_on_hand**: 47.36
+- **product_name**: Digitized attitude-oriented contingency, **quantity_available**: 251, **avg_daily_sales**: 4.666666666666667, **days_on_hand**: 53.79
+- **product_name**: Reactive reciprocal extranet, **quantity_available**: 175, **avg_daily_sales**: 2.0, **days_on_hand**: 87.5
+- **product_name**: Cloned client-server secured line, **quantity_available**: 18, **avg_daily_sales**: 3.0, **days_on_hand**: 6.0
+- **product_name**: Realigned web-enabled matrix, **quantity_available**: 162, **avg_daily_sales**: 6.0, **days_on_hand**: 27.0
+- **product_name**: Assimilated asynchronous solution, **quantity_available**: 0, **avg_daily_sales**: 6.6, **days_on_hand**: 0.0
+- **product_name**: Function-based upward-trending frame, **quantity_available**: 102, **avg_daily_sales**: 7.0, **days_on_hand**: 14.57
+- **product_name**: Synergistic multi-tasking instruction set, **quantity_available**: 128, **avg_daily_sales**: 1.0, **days_on_hand**: 128.0
+- **product_name**: Organized homogeneous encoding, **quantity_available**: 28, **avg_daily_sales**: 2.5, **days_on_hand**: 11.2
+- **product_name**: Organized user-facing product, **quantity_available**: 41, **avg_daily_sales**: 5.0, **days_on_hand**: 8.2
+- **product_name**: Grass-roots actuating archive, **quantity_available**: 41, **avg_daily_sales**: 6.4, **days_on_hand**: 6.41
+- **product_name**: Innovative fault-tolerant Graphic Interface, **quantity_available**: 75, **avg_daily_sales**: 5.8, **days_on_hand**: 12.93
+- **product_name**: De-engineered systemic implementation, **quantity_available**: 18, **avg_daily_sales**: 4.8, **days_on_hand**: 3.75
+- **product_name**: Mandatory bandwidth-monitored circuit, **quantity_available**: 31, **avg_daily_sales**: 1.0, **days_on_hand**: 31.0
+- **product_name**: Automated encompassing knowledge user, **quantity_available**: 0, **avg_daily_sales**: 6.5, **days_on_hand**: 0.0
+- **product_name**: Customer-focused object-oriented service-desk, **quantity_available**: 0, **avg_daily_sales**: 7.2, **days_on_hand**: 0.0
+- **product_name**: Fully-configurable systemic database, **quantity_available**: 14, **avg_daily_sales**: 1.5, **days_on_hand**: 9.33
+- **product_name**: Monitored foreground emulation, **quantity_available**: 0, **avg_daily_sales**: 9.0, **days_on_hand**: 0.0
+- **product_name**: Automated tertiary architecture, **quantity_available**: 49, **avg_daily_sales**: 8.0, **days_on_hand**: 6.13
+- **product_name**: Streamlined client-driven strategy, **quantity_available**: 23, **avg_daily_sales**: 5.333333333333333, **days_on_hand**: 4.31
+- **product_name**: Streamlined asynchronous open system, **quantity_available**: 2, **avg_daily_sales**: 5.0, **days_on_hand**: 0.4
+- **product_name**: Organic bandwidth-monitored complexity, **quantity_available**: 35, **avg_daily_sales**: 2.6666666666666665, **days_on_hand**: 13.13
+- **product_name**: Operative 5thgeneration core, **quantity_available**: 62, **avg_daily_sales**: 6.25, **days_on_hand**: 9.92
+- **product_name**: Switchable static Graphic Interface, **quantity_available**: 16, **avg_daily_sales**: 6.5, **days_on_hand**: 2.46
+- **product_name**: Secured systematic Internet solution, **quantity_available**: 27, **avg_daily_sales**: 6.0, **days_on_hand**: 4.5
+- **product_name**: Reactive fault-tolerant collaboration, **quantity_available**: 70, **avg_daily_sales**: 7.0, **days_on_hand**: 10.0
+- **product_name**: Vision-oriented systemic matrix, **quantity_available**: 16, **avg_daily_sales**: 3.3333333333333335, **days_on_hand**: 4.8
+- **product_name**: Compatible well-modulated groupware, **quantity_available**: 9, **avg_daily_sales**: 6.5, **days_on_hand**: 1.38
+- **product_name**: Digitized transitional open system, **quantity_available**: 26, **avg_daily_sales**: 6.0, **days_on_hand**: 4.33
+- **product_name**: Switchable eco-centric Graphical User Interface, **quantity_available**: 117, **avg_daily_sales**: 6.0, **days_on_hand**: 19.5
+- **product_name**: Enterprise-wide exuding open system, **quantity_available**: 204, **avg_daily_sales**: 4.5, **days_on_hand**: 45.33
+- **product_name**: Distributed client-driven hierarchy, **quantity_available**: 5, **avg_daily_sales**: 7.666666666666667, **days_on_hand**: 0.65
+- **product_name**: Horizontal asymmetric access, **quantity_available**: 3, **avg_daily_sales**: 1.0, **days_on_hand**: 3.0
+- **product_name**: Cross-platform local core, **quantity_available**: 137, **avg_daily_sales**: 2.6666666666666665, **days_on_hand**: 51.38
+- **product_name**: Persistent incremental monitoring, **quantity_available**: 12, **avg_daily_sales**: 6.0, **days_on_hand**: 2.0
+- **product_name**: Intuitive systematic benchmark, **quantity_available**: 76, **avg_daily_sales**: 4.0, **days_on_hand**: 19.0
+- **product_name**: Enhanced non-volatile help-desk, **quantity_available**: 13, **avg_daily_sales**: 7.333333333333333, **days_on_hand**: 1.77
+- **product_name**: Reverse-engineered explicit synergy, **quantity_available**: 10, **avg_daily_sales**: 5.666666666666667, **days_on_hand**: 1.76
+- **product_name**: Realigned intangible toolset, **quantity_available**: 15, **avg_daily_sales**: 6.666666666666667, **days_on_hand**: 2.25
+- **product_name**: Proactive optimal monitoring, **quantity_available**: 3, **avg_daily_sales**: 7.5, **days_on_hand**: 0.4
+- **product_name**: Mandatory multi-tasking groupware, **quantity_available**: 22, **avg_daily_sales**: 6.0, **days_on_hand**: 3.67
+- **product_name**: Re-contextualized next generation toolset, **quantity_available**: 14, **avg_daily_sales**: 4.333333333333333, **days_on_hand**: 3.23
+- **product_name**: Decentralized neutral core, **quantity_available**: 23, **avg_daily_sales**: 7.666666666666667, **days_on_hand**: 3.0
+- **product_name**: Face-to-face tangible process improvement, **quantity_available**: 31, **avg_daily_sales**: 2.0, **days_on_hand**: 15.5
+- **product_name**: Open-architected global contingency, **quantity_available**: 3, **avg_daily_sales**: 7.5, **days_on_hand**: 0.4
+- **product_name**: Diverse multi-tasking orchestration, **quantity_available**: 7, **avg_daily_sales**: 6.25, **days_on_hand**: 1.12
+- **product_name**: Stand-alone interactive parallelism, **quantity_available**: 10, **avg_daily_sales**: 6.333333333333333, **days_on_hand**: 1.58
+- **product_name**: Assimilated systemic analyzer, **quantity_available**: 149, **avg_daily_sales**: 6.0, **days_on_hand**: 24.83
+- **product_name**: Extended clear-thinking pricing structure, **quantity_available**: 1, **avg_daily_sales**: 7.0, **days_on_hand**: 0.14
+- **product_name**: Robust actuating access, **quantity_available**: 8, **avg_daily_sales**: 5.0, **days_on_hand**: 1.6
+- **product_name**: Cross-group human-resource protocol, **quantity_available**: 145, **avg_daily_sales**: 2.0, **days_on_hand**: 72.5
+- **product_name**: De-engineered homogeneous implementation, **quantity_available**: 1, **avg_daily_sales**: 7.0, **days_on_hand**: 0.14
+- **product_name**: Persevering user-facing instruction set, **quantity_available**: 2, **avg_daily_sales**: 4.5, **days_on_hand**: 0.44
+- **product_name**: Polarized fault-tolerant toolset, **quantity_available**: 26, **avg_daily_sales**: 2.0, **days_on_hand**: 13.0
+- **product_name**: Quality-focused asynchronous emulation, **quantity_available**: 76, **avg_daily_sales**: 2.5, **days_on_hand**: 30.4
+- **product_name**: Multi-tiered tertiary software, **quantity_available**: 60, **avg_daily_sales**: 7.0, **days_on_hand**: 8.57
+- **product_name**: Secured fresh-thinking Graphic Interface, **quantity_available**: 35, **avg_daily_sales**: 6.0, **days_on_hand**: 5.83
+- **product_name**: Public-key 24/7 challenge, **quantity_available**: 13, **avg_daily_sales**: 5.333333333333333, **days_on_hand**: 2.44
+- **product_name**: Vision-oriented maximized artificial intelligence, **quantity_available**: 17, **avg_daily_sales**: 5.4, **days_on_hand**: 3.15
+- **product_name**: Grass-roots zero-defect solution, **quantity_available**: 105, **avg_daily_sales**: 9.0, **days_on_hand**: 11.67
+- **product_name**: Integrated bottom-line monitoring, **quantity_available**: 2, **avg_daily_sales**: 6.0, **days_on_hand**: 0.33
+- **product_name**: Organized user-facing pricing structure, **quantity_available**: 163, **avg_daily_sales**: 7.25, **days_on_hand**: 22.48
+- **product_name**: Decentralized value-added flexibility, **quantity_available**: 154, **avg_daily_sales**: 8.0, **days_on_hand**: 19.25
+- **product_name**: De-engineered high-level access, **quantity_available**: 110, **avg_daily_sales**: 5.4, **days_on_hand**: 20.37
+- **product_name**: Right-sized maximized ability, **quantity_available**: 22, **avg_daily_sales**: 6.333333333333333, **days_on_hand**: 3.47
+- **product_name**: Right-sized optimizing hardware, **quantity_available**: 221, **avg_daily_sales**: 7.5, **days_on_hand**: 29.47
+- **product_name**: Organized modular intranet, **quantity_available**: 20, **avg_daily_sales**: 4.75, **days_on_hand**: 4.21
+- **product_name**: Optional intermediate hardware, **quantity_available**: 249, **avg_daily_sales**: 8.0, **days_on_hand**: 31.13
+- **product_name**: Exclusive contextually-based matrices, **quantity_available**: 1, **avg_daily_sales**: 2.0, **days_on_hand**: 0.5
+- **product_name**: Upgradable analyzing access, **quantity_available**: 100, **avg_daily_sales**: 4.0, **days_on_hand**: 25.0
+- **product_name**: Universal optimizing capacity, **quantity_available**: 155, **avg_daily_sales**: 6.0, **days_on_hand**: 25.83
+- **product_name**: Visionary empowering system engine, **quantity_available**: 175, **avg_daily_sales**: 6.4, **days_on_hand**: 27.34
+- **product_name**: Centralized foreground application, **quantity_available**: 52, **avg_daily_sales**: 6.0, **days_on_hand**: 8.67
+- **product_name**: Proactive solution-oriented workforce, **quantity_available**: 48, **avg_daily_sales**: 4.75, **days_on_hand**: 10.11
+- **product_name**: De-engineered needs-based analyzer, **quantity_available**: 132, **avg_daily_sales**: 7.5, **days_on_hand**: 17.6
+- **product_name**: Adaptive disintermediate customer loyalty, **quantity_available**: 12, **avg_daily_sales**: 6.25, **days_on_hand**: 1.92
+- **product_name**: Streamlined static strategy, **quantity_available**: 1, **avg_daily_sales**: 5.5, **days_on_hand**: 0.18
+- **product_name**: Vision-oriented 6thgeneration approach, **quantity_available**: 57, **avg_daily_sales**: 4.5, **days_on_hand**: 12.67
+- **product_name**: Cross-group 4thgeneration neural-net, **quantity_available**: 35, **avg_daily_sales**: 7.5, **days_on_hand**: 4.67
+- **product_name**: Cloned composite initiative, **quantity_available**: 27, **avg_daily_sales**: 7.5, **days_on_hand**: 3.6
+- **product_name**: User-friendly uniform productivity, **quantity_available**: 4, **avg_daily_sales**: 2.0, **days_on_hand**: 2.0
+- **product_name**: Automated multimedia groupware, **quantity_available**: 29, **avg_daily_sales**: 4.333333333333333, **days_on_hand**: 6.69
+- **product_name**: Customizable client-server middleware, **quantity_available**: 29, **avg_daily_sales**: 3.0, **days_on_hand**: 9.67
+- **product_name**: Mandatory upward-trending workforce, **quantity_available**: 24, **avg_daily_sales**: 5.5, **days_on_hand**: 4.36
+- **product_name**: Team-oriented background task-force, **quantity_available**: 163, **avg_daily_sales**: 6.0, **days_on_hand**: 27.17
+- **product_name**: Total multimedia access, **quantity_available**: 5, **avg_daily_sales**: 5.4, **days_on_hand**: 0.93
+- **product_name**: Fundamental system-worthy customer loyalty, **quantity_available**: 117, **avg_daily_sales**: 4.0, **days_on_hand**: 29.25
+- **product_name**: Extended transitional portal, **quantity_available**: 210, **avg_daily_sales**: 8.0, **days_on_hand**: 26.25
+- **product_name**: Streamlined demand-driven concept, **quantity_available**: 2, **avg_daily_sales**: 4.0, **days_on_hand**: 0.5
+- **product_name**: Cross-platform optimal knowledge user, **quantity_available**: 5, **avg_daily_sales**: 4.333333333333333, **days_on_hand**: 1.15
+- **product_name**: Sharable static open system, **quantity_available**: 42, **avg_daily_sales**: 2.0, **days_on_hand**: 21.0
+- **product_name**: Innovative leadingedge challenge, **quantity_available**: 102, **avg_daily_sales**: 5.0, **days_on_hand**: 20.4
+- **product_name**: Assimilated multi-state strategy, **quantity_available**: 80, **avg_daily_sales**: 6.833333333333333, **days_on_hand**: 11.71
+- **product_name**: De-engineered needs-based conglomeration, **quantity_available**: 0, **avg_daily_sales**: 5.5, **days_on_hand**: 0.0
+- **product_name**: Self-enabling web-enabled time-frame, **quantity_available**: 3, **avg_daily_sales**: 6.0, **days_on_hand**: 0.5
+- **product_name**: Centralized directional project, **quantity_available**: 7, **avg_daily_sales**: 10.0, **days_on_hand**: 0.7
+- **product_name**: Customer-focused content-based structure, **quantity_available**: 0, **avg_daily_sales**: 4.5, **days_on_hand**: 0.0
+- **product_name**: Cloned even-keeled circuit, **quantity_available**: 42, **avg_daily_sales**: 6.25, **days_on_hand**: 6.72
+
+## Recommendations
+
+## Conclusion
+
+No conclusion available.

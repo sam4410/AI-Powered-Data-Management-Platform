@@ -1,0 +1,161 @@
+[
+  {
+    "id": "DP-001",
+    "name": "Customer 360 View",
+    "report_suite": [
+      "Customer Profile & Segmentation",
+      "Customer Lifetime Value (CLV) & Profitability",
+      "Behavior & Engagement Analytics",
+      "Churn & Retention Insights",
+      "Customer Support & Experience Metrics",
+      "Loyalty & Referral Program Performance"
+    ],
+    "description": "Complete customer profile with purchase history, engagement, CLV, experiences and preferences",
+    "priority": "High",
+    "status": "In Progress",
+    "business_owner": "Marketing Team",
+    "technical_owner": "Data Engineering",
+    "expected_completion": "2024-12-31",
+    "data_sources": [
+      "customers"
+    ],
+    "use_cases": [
+      "Personalization",
+      "Customer Segmentation",
+      "Churn Prevention"
+    ]
+  },
+  {
+    "id": "DP-002",
+    "name": "Sales Performance Dashboard",
+    "report_suite": [
+      "Revenue & GMV Reports",
+      "Sales Conversion Funnel",
+      "Product Sales Performance",
+      "Sales by Channel & Campaign",
+      "Customer Acquisition & Retention Sales View",
+      "Regional & Fulfillment-Based Sales Insights"
+    ],
+    "description": "Real-time sales metrics and performance tracking",
+    "priority": "High",
+    "status": "Planning",
+    "business_owner": "Sales Team",
+    "technical_owner": "Analytics Team",
+    "expected_completion": "2024-11-30",
+    "data_sources": [
+      "customers",
+      "sales",
+      "products",
+      "orders",
+      "returns",
+      "customer_interactions",
+      "abandoned_carts",
+      "campaigns",
+      "shipping"
+    ],
+    "use_cases": [
+      "Performance Tracking",
+      "Commission Calculation",
+      "Forecasting"
+    ]
+  },
+  {
+    "id": "DP-003",
+    "name": "Inventory Optimization",
+    "report_suite": [
+      "Stock Availability & Health",
+      "Demand Forecasting & Seasonality",
+      "Inventory Turnover & Aging",
+      "Returns Impact on Inventory",
+      "Procurement & Replenishment Optimization",
+      "Warehouse-Level Inventory Insights"
+    ],
+    "description": "Optimize inventory levels based on demand patterns",
+    "priority": "Medium",
+    "status": "Backlog",
+    "business_owner": "Operations Team",
+    "technical_owner": "Data Science",
+    "expected_completion": "2025-01-31",
+    "data_sources": [
+      "inventory",
+      "products",
+      "sales",
+      "orders",
+      "campaigns",
+      "returns",
+      "vendors",
+      "warehouses",
+      "shipping"
+    ],
+    "use_cases": [
+      "Demand Forecasting",
+      "Stock Optimization",
+      "Supplier Management"
+    ]
+  },
+  {
+    "id": "DP-004",
+    "name": "Employee Performance Analytics",
+    "report_suite": [
+      "Fulfillment Center Workforce Productivity",
+      "Customer Support Performance",
+      "Sales & Category Manager KPIs",
+      "Attendance & Shift Adherence (Warehouse/Retail Staff)",
+      "Training & Onboarding Effectiveness",
+      "Performance-Based Incentive Insights"
+    ],
+    "description": "Track and analyze employee performance metrics",
+    "priority": "Medium",
+    "status": "Backlog",
+    "business_owner": "HR Team",
+    "technical_owner": "Analytics Team",
+    "expected_completion": "2025-02-28",
+    "data_sources": [
+      "shipping",
+      "warehouses",
+      "employees",
+      "customer_support",
+      "sales",
+      "campaigns",
+      "products"
+    ],
+    "use_cases": [
+      "Performance Review",
+      "Promotion Planning",
+      "Training Needs"
+    ]
+  },
+  {
+    "id": "DP-005",
+    "name": "Financial Reporting Suite",
+    "report_suite": [
+      "Profit & Loss Analysis",
+      "Cash Flow & Working Capital Reports",
+      "Sales & Revenue Accounting",
+      "Cost of Goods Sold (COGS) & Logistics Cost",
+      "Returns & Refunds Financial Impact",
+      "Tax & Compliance Reporting"
+    ],
+    "description": "Comprehensive financial reports and analysis",
+    "priority": "High",
+    "status": "Planning",
+    "business_owner": "Finance Team",
+    "technical_owner": "Data Engineering",
+    "expected_completion": "2024-12-15",
+    "data_sources": [
+      "sales",
+      "products",
+      "orders",
+      "returns",
+      "customers",
+      "financial_transactions",
+      "payments",
+      "shipping"
+    ],
+    "use_cases": [
+      "Monthly Reports",
+      "Budget Planning",
+      "Cost Analysis"
+    ]
+  }
+]

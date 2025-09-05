@@ -1,0 +1,588 @@
+{
+  "ecommerce_db.db": {
+    "discovery": [
+      {
+        "db": "sqlite:///C:/Users/ManojSharma/LLM Projects/AI projects/Advanced Agentic AI Projects/Agentic AI Platform for Data Management/agentic_ai_platform_for_data_management-data_products-backup/uploaded_dbs/ecommerce_db.db",
+        "table": "customers",
+        "result": {
+          "metadata": {
+            "table_name": "customers",
+            "analysis_timestamp": "2025-09-05T12:16:07.142808",
+            "basic_info": {
+              "row_count": 15000,
+              "column_count": 25,
+              "estimated_size_mb": 13.246536254882812,
+              "creation_sql": "CREATE TABLE customers (\n                customer_id INTEGER PRIMARY KEY,\n                first_name TEXT NOT NULL,\n                last_name TEXT NOT NULL,\n                email TEXT UNIQUE,\n                phone TEXT,\n                address TEXT,\n                city TEXT,\n                state TEXT,\n                zip_code TEXT,\n                country TEXT,\n                registration_date DATE,\n                last_purchase_date DATE,\n                total_spent DECIMAL(10,2),\n                customer_segment TEXT,\n                is_active BOOLEAN DEFAULT 1,\n                age INTEGER,\n                gender TEXT,\n                acquisition_channel TEXT,\n                lifecycle_stage TEXT,\n                clv_score DECIMAL(10,2),\n                churn_risk_score DECIMAL(3,2),\n                preferred_category TEXT,\n                communication_preference TEXT,\n                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n            )"
+            },
+            "columns": [
+              {
+                "name": "customer_id",
+                "type": "INTEGER",
+                "nullable": true,
+                "is_primary_key": 1
+              },
+              {
+                "name": "first_name",
+                "type": "TEXT",
+                "nullable": false,
+                "is_primary_key": 0
+              },
+              {
+                "name": "last_name",
+                "type": "TEXT",
+                "nullable": false,
+                "is_primary_key": 0
+              },
+              {
+                "name": "email",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "phone",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "address",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "city",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "state",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "zip_code",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "country",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "registration_date",
+                "type": "DATE",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "last_purchase_date",
+                "type": "DATE",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "total_spent",
+                "type": "DECIMAL(10,2)",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "customer_segment",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "is_active",
+                "type": "BOOLEAN",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "age",
+                "type": "INTEGER",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "gender",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "acquisition_channel",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "lifecycle_stage",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "clv_score",
+                "type": "DECIMAL(10,2)",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "churn_risk_score",
+                "type": "DECIMAL(3,2)",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "preferred_category",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "communication_preference",
+                "type": "TEXT",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "created_at",
+                "type": "TIMESTAMP",
+                "nullable": true,
+                "is_primary_key": 0
+              },
+              {
+                "name": "updated_at",
+                "type": "TIMESTAMP",
+                "nullable": true,
+                "is_primary_key": 0
+              }
+            ],
+            "relationships": {
+              "primary_keys": [
+                "customer_id"
+              ],
+              "foreign_key_hints": [],
+              "indexes": [
+                {
+                  "name": "sqlite_autoindex_customers_1",
+                  "unique": true,
+                  "columns": [
+                    "email"
+                  ]
+                }
+              ]
+            },
+            "data_quality": {
+              "overall_score": 0,
+              "completeness_score": 0,
+              "consistency_score": 0,
+              "validity_score": 0,
+              "issues": [],
+              "warnings": [],
+              "metrics": {}
+            },
+            "business_insights": {
+              "potential_use_cases": [
+                "Customer relationship management",
+                "User behavior analysis",
+                "Personalization and segmentation"
+              ],
+              "data_maturity_level": "High - Well-structured with temporal data",
+              "automation_readiness": "High - Ready for automated processing",
+              "business_value": "",
+              "critical_dependencies": []
+            },
+            "recommendations": {
+              "immediate_actions": [
+                "\u26a0\ufe0f CRITICAL: Address data quality issues before proceeding with analytics"
+              ],
+              "schema_improvements": [
+                "\ud83d\udd27 Review nullable columns - add NOT NULL constraints where appropriate"
+              ],
+              "performance_optimizations": [
+                "\u26a1 Consider adding indexes on frequently queried columns"
+              ],
+              "governance_actions": [
+                "\ud83d\udccb Many text columns detected - implement data validation rules",
+                "\ud83d\udcd6 Document table purpose and column definitions for team reference"
+              ],
+              "business_enablement": [
+                "\ud83d\udcc8 Table has sufficient data volume for analytics - consider dashboard creation",
+                "\ud83d\udcca Temporal data available - enable time-series analysis and trend reporting"
+              ]
+            }
+          },
+          "profiling": {
+            "table_name": "customers",
+            "analysis_timestamp": "2025-09-05T12:16:10.498911",
+            "total_records": 15000,
+            "total_columns": 25,
+            "memory_usage_mb": 19.29,
+            "table_quality_score": 0.992,
+            "column_profiles": {
+              "customer_id": {
+                "column_name": "customer_id",
+                "data_type": "int64",
+                "semantic_type": "IDENTIFIER",
+                "is_primary_key": 1,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 15000,
+                "unique_percentage": 100.0,
+                "cardinality": "unique",
+                "quality_score": 1.0
+              },
+              "first_name": {
+                "column_name": "first_name",
+                "data_type": "object",
+                "semantic_type": "PII_NAME",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 680,
+                "unique_percentage": 4.53,
+                "cardinality": "low",
+                "quality_score": 1.0,
+                "recommendations": [
+                  "Implement data masking for PII column first_name"
+                ]
+              },
+              "last_name": {
+                "column_name": "last_name",
+                "data_type": "object",
+                "semantic_type": "PII_NAME",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 998,
+                "unique_percentage": 6.65,
+                "cardinality": "low",
+                "quality_score": 1.0,
+                "recommendations": [
+                  "Implement data masking for PII column last_name"
+                ]
+              },
+              "email": {
+                "column_name": "email",
+                "data_type": "object",
+                "semantic_type": "PII_EMAIL",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 15000,
+                "unique_percentage": 100.0,
+                "cardinality": "unique",
+                "quality_score": 1.0,
+                "recommendations": [
+                  "Implement data masking for PII column email"
+                ]
+              },
+              "phone": {
+                "column_name": "phone",
+                "data_type": "object",
+                "semantic_type": "PII_PHONE",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 15000,
+                "unique_percentage": 100.0,
+                "cardinality": "unique",
+                "quality_score": 0.799,
+                "recommendations": [
+                  "Implement data masking for PII column phone"
+                ]
+              },
+              "address": {
+                "column_name": "address",
+                "data_type": "object",
+                "semantic_type": "PII_ADDRESS",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 15000,
+                "unique_percentage": 100.0,
+                "cardinality": "unique",
+                "quality_score": 1.0,
+                "recommendations": [
+                  "Implement data masking for PII column address"
+                ]
+              },
+              "city": {
+                "column_name": "city",
+                "data_type": "object",
+                "semantic_type": "PII_ADDRESS",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 10653,
+                "unique_percentage": 71.02,
+                "cardinality": "high",
+                "quality_score": 1.0,
+                "recommendations": [
+                  "Implement data masking for PII column city"
+                ]
+              },
+              "state": {
+                "column_name": "state",
+                "data_type": "object",
+                "semantic_type": "OPERATIONAL_STATUS",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 50,
+                "unique_percentage": 0.33,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "zip_code": {
+                "column_name": "zip_code",
+                "data_type": "object",
+                "semantic_type": "PII_ADDRESS",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 13945,
+                "unique_percentage": 92.97,
+                "cardinality": "high",
+                "quality_score": 1.0,
+                "recommendations": [
+                  "Implement data masking for PII column zip_code"
+                ]
+              },
+              "country": {
+                "column_name": "country",
+                "data_type": "object",
+                "semantic_type": "TEXT",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 1,
+                "unique_percentage": 0.01,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "registration_date": {
+                "column_name": "registration_date",
+                "data_type": "object",
+                "semantic_type": "TEMPORAL",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 731,
+                "unique_percentage": 4.87,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "last_purchase_date": {
+                "column_name": "last_purchase_date",
+                "data_type": "object",
+                "semantic_type": "TEMPORAL",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 366,
+                "unique_percentage": 2.44,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "total_spent": {
+                "column_name": "total_spent",
+                "data_type": "float64",
+                "semantic_type": "NUMERIC",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 14931,
+                "unique_percentage": 99.54,
+                "cardinality": "high",
+                "quality_score": 1.0
+              },
+              "customer_segment": {
+                "column_name": "customer_segment",
+                "data_type": "object",
+                "semantic_type": "TEXT",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 4,
+                "unique_percentage": 0.03,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "is_active": {
+                "column_name": "is_active",
+                "data_type": "int64",
+                "semantic_type": "NUMERIC",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 2,
+                "unique_percentage": 0.01,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "age": {
+                "column_name": "age",
+                "data_type": "int64",
+                "semantic_type": "NUMERIC",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 58,
+                "unique_percentage": 0.39,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "gender": {
+                "column_name": "gender",
+                "data_type": "object",
+                "semantic_type": "TEXT",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 3,
+                "unique_percentage": 0.02,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "acquisition_channel": {
+                "column_name": "acquisition_channel",
+                "data_type": "object",
+                "semantic_type": "TEXT",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 6,
+                "unique_percentage": 0.04,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "lifecycle_stage": {
+                "column_name": "lifecycle_stage",
+                "data_type": "object",
+                "semantic_type": "OPERATIONAL_STATUS",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 5,
+                "unique_percentage": 0.03,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "clv_score": {
+                "column_name": "clv_score",
+                "data_type": "float64",
+                "semantic_type": "NUMERIC",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 14950,
+                "unique_percentage": 99.67,
+                "cardinality": "high",
+                "quality_score": 1.0
+              },
+              "churn_risk_score": {
+                "column_name": "churn_risk_score",
+                "data_type": "float64",
+                "semantic_type": "NUMERIC",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 81,
+                "unique_percentage": 0.54,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "preferred_category": {
+                "column_name": "preferred_category",
+                "data_type": "object",
+                "semantic_type": "CATEGORICAL",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 5,
+                "unique_percentage": 0.03,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "communication_preference": {
+                "column_name": "communication_preference",
+                "data_type": "object",
+                "semantic_type": "TEXT",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 4,
+                "unique_percentage": 0.03,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "created_at": {
+                "column_name": "created_at",
+                "data_type": "object",
+                "semantic_type": "TEMPORAL",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 1,
+                "unique_percentage": 0.01,
+                "cardinality": "low",
+                "quality_score": 1.0
+              },
+              "updated_at": {
+                "column_name": "updated_at",
+                "data_type": "object",
+                "semantic_type": "TEMPORAL",
+                "is_primary_key": 0,
+                "total_count": 15000,
+                "null_count": "0",
+                "null_percentage": 0.0,
+                "unique_count": 1,
+                "unique_percentage": 0.01,
+                "cardinality": "low",
+                "quality_score": 1.0
+              }
+            }
+          }
+        },
+        "summary": "## \ud83d\udcc1 Table: `customers`\n\n### \ud83d\udd0d Metadata Summary\n| Property | Value |\n|---|---|\n| Table Name | customers |\n| Row Count | 15000 |\n| Column Count | 25 |\n| Estimated Size (MB) | 13.25 |\n| Primary Keys | customer_id |\n| Foreign Keys | None |\n\n### \ud83d\udcca Profiling Summary\n#### \ud83d\udd38 Table Summary\n| Metric | Value |\n|---|---|\n| Total Records | 15000 |\n| Total Columns | 25 |\n| Memory Usage (MB) | 19.29 |\n| Quality Score | 0.992 |\n| Business Domain | N/A |\n| Criticality | N/A |\n\n#### \ud83d\udd38 Column Quality Metrics\n| Column | Type | Quality | Null % | Unique % |\n|---|---|---|---|---|\n| customer_id | int64 | 1.0 | 0.0% | 100.0% |\n| first_name | object | 1.0 | 0.0% | 4.53% |\n| last_name | object | 1.0 | 0.0% | 6.65% |\n| email | object | 1.0 | 0.0% | 100.0% |\n| phone | object | 0.799 | 0.0% | 100.0% |\n| address | object | 1.0 | 0.0% | 100.0% |\n| city | object | 1.0 | 0.0% | 71.02% |\n| state | object | 1.0 | 0.0% | 0.33% |\n| zip_code | object | 1.0 | 0.0% | 92.97% |\n| country | object | 1.0 | 0.0% | 0.01% |\n| registration_date | object | 1.0 | 0.0% | 4.87% |\n| last_purchase_date | object | 1.0 | 0.0% | 2.44% |\n| total_spent | float64 | 1.0 | 0.0% | 99.54% |\n| customer_segment | object | 1.0 | 0.0% | 0.03% |\n| is_active | int64 | 1.0 | 0.0% | 0.01% |\n| age | int64 | 1.0 | 0.0% | 0.39% |\n| gender | object | 1.0 | 0.0% | 0.02% |\n| acquisition_channel | object | 1.0 | 0.0% | 0.04% |\n| lifecycle_stage | object | 1.0 | 0.0% | 0.03% |\n| clv_score | float64 | 1.0 | 0.0% | 99.67% |\n| churn_risk_score | float64 | 1.0 | 0.0% | 0.54% |\n| preferred_category | object | 1.0 | 0.0% | 0.03% |\n| communication_preference | object | 1.0 | 0.0% | 0.03% |\n| created_at | object | 1.0 | 0.0% | 0.01% |\n| updated_at | object | 1.0 | 0.0% | 0.01% |\n\n\n### \u2705 Recommendations\n_No valid recommendations found._\n\n### \ud83e\uddf1 Foundation Assessment\n- \ud83d\udea7 **Constraint Issues:**\n\n    - missing_not_null: phone, address, city, state, zip_code, country, registration_date, last_purchase_date, total_spent, customer_segment, age, gender, acquisition_channel, lifecycle_stage, clv_score, churn_risk_score, preferred_category, communication_preference\n\n    - missing_default_values: \n\n    - missing_unique_constraints: \n\n- \ud83d\udcdd **Naming Violations:**\n\n    - columns_not_snake_case: \n\n    - reserved_keywords_used: \n\n- \u26a0\ufe0f **Datatype Warnings:**\n\n    - Column 'phone' uses TEXT instead of VARCHAR(15)\n\n    - Column 'total_spent' uses DECIMAL(10,2) but should ensure it's defined consistently\n\n- \ud83e\uddf1 **Architecture Findings:**\n\n    - Consider adding foreign key constraints to ensure referential integrity\n\n    - Column 'email' is unique but no other columns are indexed, consider indexing frequently queried fields.\n\n    - Review nullable columns and add NOT NULL constraints where appropriate for mandatory fields\n\n### \ud83d\udd04 Process Mapping\nTable: `customers`\n- \ud83d\udd04 Business Processes: N/A\n- \ud83d\udd17 Dependencies: N/A\n- \ud83d\udee0 Bottlenecks: None noted\n- \ud83d\udca1 Recommendations:\n  - None provided\n\n\n### \ud83e\udde0 AI Recommendations\n- **Data Quality**\n  - Implement **NOT NULL** constraints on the following columns: `phone`, `address`, `city`, `state`, `zip_code`, `country`, `registration_date`, `last_purchase_date`, `total_spent`, `customer_segment`, `age`, `gender`, `acquisition_channel`, `lifecycle_stage`, `clv_score`, `churn_risk_score`, `preferred_category`, and `communication_preference` to ensure completeness.\n  - Apply **data masking** for PII columns: `first_name`, `last_name`, `email`, `phone`, `address`, `city`, and `zip_code` to comply with data privacy regulations.\n\n- **Schema Design**\n  - Refactor the schema to normalize tables if necessary by analyzing potential duplicate data, especially focusing on `customer_segment`, `acquisition_channel`, and `preferred_category`.\n  - Amend the datatype for the `phone` column from **TEXT** to **VARCHAR(15)** to accurately reflect its purpose and improve validation.\n\n- **Indexing & Performance**\n  - Add indexes for frequently queried columns that currently lack them, especially `registration_date`, `last_purchase_date`, and other high-volume categorical fields to improve query performance.\n  - Review existing indexing strategies, particularly ensuring that any column with a unique constraint like `email` is indexed for faster lookups.\n\n- **Governance & Compliance**\n  - Document table purpose and column definitions to enhance team understanding and governance, ensuring that all team members have a clear reference for data usage.\n  - Consider adding **foreign key constraints** for better referential integrity in relationships as opportunities arise in future expansions of the dataset.",
+        "recommendations": [
+          "\u26a0\ufe0f Metadata or profiling input is invalid."
+        ]
+      }
+    ]
+  }
+}

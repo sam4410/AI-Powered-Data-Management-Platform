@@ -1,0 +1,1 @@
+I am unable to analyze the `customers` table as I cannot access its metadata or profiling information.

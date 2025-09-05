@@ -1,0 +1,1 @@
+Unable to perform data validation on the 'customers' table due to invalid connection string and lack of access to database information. Please verify the correct SQLite path for the database.

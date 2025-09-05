@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Monthly Sales Report",
+    "description": "Monthly sales performance across all channels",
+    "schedule": "Monthly",
+    "recipients": [
+      "sales@company.com",
+      "management@company.com"
+    ],
+    "queries": [
+      "SELECT DATE_TRUNC('month', sale_date) as month, SUM(total_price) as revenue FROM sales GROUP BY month",
+      "SELECT p.category, SUM(s.total_price) as revenue FROM sales s JOIN products p ON s.product_id = p.product_id GROUP BY p.category"
+    ],
+    "visualizations": [
+      "bar_chart",
+      "line_chart",
+      "pie_chart"
+    ]
+  },
+  {
+    "name": "Customer Segmentation Report",
+    "description": "Customer analysis by segment and behavior",
+    "schedule": "Weekly",
+    "recipients": [
+      "marketing@company.com"
+    ],
+    "queries": [
+      "SELECT customer_segment, COUNT(*) as count, AVG(total_spent) as avg_spending FROM customers GROUP BY customer_segment",
+      "SELECT customer_segment, COUNT(*) as active_customers FROM customers WHERE is_active = 1 GROUP BY customer_segment"
+    ],
+    "visualizations": [
+      "pie_chart",
+      "bar_chart"
+    ]
+  },
+  {
+    "name": "Product Performance Report",
+    "description": "Product sales and inventory analysis",
+    "schedule": "Weekly",
+    "recipients": [
+      "operations@company.com",
+      "purchasing@company.com"
+    ],
+    "queries": [
+      "SELECT p.product_name, SUM(s.quantity) as units_sold, SUM(s.total_price) as revenue FROM sales s JOIN products p ON s.product_id = p.product_id GROUP BY p.product_name ORDER BY revenue DESC",
+      "SELECT product_name, stock_quantity FROM products WHERE stock_quantity < 10"
+    ],
+    "visualizations": [
+      "table",
+      "bar_chart"
+    ]
+  }
+]

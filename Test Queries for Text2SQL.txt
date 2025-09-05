@@ -1,0 +1,11 @@
+1. Show count of male customers. Consider the fact that male customers are represented by 'M' in gender column
+2. List all customers along with the total number of transactions they made and the total amount they spent. Sort the results by the amount spent in descending order
+3. For each customer, show their full name, how many transactions they’ve made, and the total money they’ve spent, sorted by highest spending
+
+
+
+3. For each customer, show their full name, the total number of transactions they made, the total amount they spent, and the number of support tickets they raised. Sort the list by the total spent, highest first
+Alternative NL Phrasing to test Text2SQL Engine
+List customers with their name, number of purchases, total money spent, and number of support tickets. Sort by spending descending
+Give me a customer summary including transactions made, money spent, and support tickets created, ordered by amount spent
+How many purchases and support tickets has each customer made? Include total spent and sort by most spent
